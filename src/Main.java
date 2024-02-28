@@ -5,7 +5,7 @@ public class Main {
         int value = 5_000;// параметров программы: начального счёта,
         int score;// суммы пополнения и тп
 
-        if (value >= 1000) {
+        if (value > 1000) {
             score = value / 1000;
             balance = balance + value;
             System.out.print("Баланс пополнен на " + value + " рублей." + " Бонусный счет пополнен на " + score + " баллa/ов. Текущий баланс " + balance + " рублей.");
