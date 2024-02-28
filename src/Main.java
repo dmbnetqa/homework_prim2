@@ -1,19 +1,21 @@
 public class Main {
     public static void main(String[] args) {
 
-        int balance = 200;// Объявляете переменные для входных данных и
-        int value = 5_000;// параметров программы: начального счёта,
-        int score;// суммы пополнения и тп
+        int balance = 100;// Объявляете переменные для входных данных и
+        int value = 1100;// параметров программы: начального счёта,
+        int score = 0;// суммы пополнения и тп
+        int bonusbalance;
 
         if (value > 1000) {
-            score = value / 1000;
+            score = value / 100;
             balance = balance + value;
-            System.out.print("Баланс пополнен на " + value + " рублей." + " Бонусный счет пополнен на " + score + " баллa/ов. Текущий баланс " + balance + " рублей.");
+            bonusbalance = balance + score;
+            System.out.print("Баланс пополнен на " + value + " рублей." + " Бонусный счет пополнен на " + score + " баллa/ов. Текущий баланс " + bonusbalance + " рублей.");
 
         } else {
-            score = value / 1000;
             balance = balance + value;
-            System.out.print("Баланс пополнен на " + value + " рублей." + " Бонусный счет пополнен на " + score + " баллa/ов. Текущий баланс " + balance + " рублей.");
+            bonusbalance = balance + score;
+            System.out.print("Баланс пополнен на " + value + " рублей." + " Бонусный счет пополнен на " + score + " баллa/ов. Текущий баланс " + bonusbalance + " рублей.");
 
 
         }
