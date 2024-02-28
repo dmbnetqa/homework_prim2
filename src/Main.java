@@ -5,19 +5,18 @@ public class Main {
         int value = 5_000;// параметров программы: начального счёта,
         int score;// суммы пополнения и тп
 
-if ( value >= 1000 ) {
-    score = value / 1000;
-    balance = balance + value;
-    System.out.print("Баланс пополнен на " + value + " рублей." + " Бонусный счет пополнен на " + score + " баллa/ов. Текущий баланс " + balance + " рублей.");
+        if (value >= 1000) {
+            score = value / 1000;
+            balance = balance + value;
+            System.out.print("Баланс пополнен на " + value + " рублей." + " Бонусный счет пополнен на " + score + " баллa/ов. Текущий баланс " + balance + " рублей.");
 
-} else {
-    score = value / 1000;
-    balance = balance + value;
-    System.out.print("Баланс пополнен на " + value + " рублей." + " Бонусный счет пополнен на " + score + " баллa/ов. Текущий баланс " + balance + " рублей.");
+        } else {
+            score = value / 1000;
+            balance = balance + value;
+            System.out.print("Баланс пополнен на " + value + " рублей." + " Бонусный счет пополнен на " + score + " баллa/ов. Текущий баланс " + balance + " рублей.");
 
 
-
-}
+        }
         // Условным оператором проверяете, превысила ли
         // сумма пополнения порог, и для этих двух разных
         // сценариев рассчитываете сумму бонуса и выводите
